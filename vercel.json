@@ -4,6 +4,7 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": null,
+  "rootDirectory": ".",
   "rewrites": [
     {
       "source": "/(.*)",

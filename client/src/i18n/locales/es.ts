@@ -92,25 +92,29 @@ export const es = {
         name: 'Natália Monteiro',
         role: 'Fisioterapeuta Integrativa',
         company: 'Pelvis Academy',
-        text: 'Cíclica transformó completamente la experiencia de mis pacientes. La tecnología creada por Thype unió ciencia, autocuidado e IA de una forma que nunca había visto. Diseño impecable, flujo intuitivo y una visión profunda del ciclo femenino. Es un proyecto que realmente cambia vidas.'
+        text: 'Cíclica transformó completamente la experiencia de mis pacientes. La tecnología creada por Thype unió ciencia, autocuidado e IA de una forma que nunca había visto. Diseño impecable, flujo intuitivo y una visión profunda del ciclo femenino. Es un proyecto que realmente cambia vidas.',
+        rating: 5
       },
       {
         name: 'Fabrício Stagliano',
         role: 'CEO',
         company: 'Radar Investimentos',
-        text: 'La app Radar elevó nuestra operación a otro nivel. Thype entregó un sistema seguro, rápido y perfecto para nuestros clientes — con soporte integrado, gestión de planes y UX de alto estándar. Es exactamente lo que el mercado financiero necesitaba. Resultado muy por encima de lo esperado.'
+        text: 'La app Radar elevó nuestra operación a otro nivel. Thype entregó un sistema seguro, rápido y perfecto para nuestros clientes — con soporte integrado, gestión de planes y UX de alto estándar. Es exactamente lo que el mercado financiero necesitaba. Resultado muy por encima de lo esperado.',
+        rating: 5
       },
       {
         name: 'Isac Philippe',
         role: 'CIO',
         company: 'Radar Investimentos',
-        text: 'Como responsable del área tecnológica, puedo afirmar: Thype desarrolló un producto sólido, escalable y técnicamente impecable. Cada funcionalidad fue diseñada para alto rendimiento. Radar nunca estuvo tan profesional, robusto e intuitivo. Asociación que continuará por muchos años.'
+        text: 'Como responsable del área tecnológica, puedo afirmar: Thype desarrolló un producto sólido, escalable y técnicamente impecable. Cada funcionalidad fue diseñada para alto rendimiento. Radar nunca estuvo tan profesional, robusto e intuitivo. Asociación que continuará por muchos años.',
+        rating: 5
       },
       {
         name: 'Jader Caresia',
         role: 'Gerente de Proyectos',
         company: 'Empresa Operacional',
-        text: 'Thype revolucionó nuestra rutina operacional. Los sistemas construidos por el equipo optimizaron procesos, redujeron errores y nos dieron total control del flujo de trabajo. La entrega fue extremadamente profesional, con velocidad, precisión y soporte excepcional. Recomiendo sin dudar.'
+        text: 'Thype revolucionó nuestra rutina operacional. Los sistemas construidos por el equipo optimizaron procesos, redujeron errores y nos dieron total control del flujo de trabajo. La entrega fue extremadamente profesional, con velocidad, precisión y soporte excepcional. Recomiendo sin dudar.',
+        rating: 5
       }
     ]
   },

@@ -205,7 +205,7 @@ async function runApp(setup) {
 
 // server/index-prod.ts
 async function serveStatic(app2, _server) {
-  const distPath = path.resolve(import.meta.dirname, "public");
+  const distPath = path.resolve(import.meta.dirname, "../dist/client");
   if (!fs.existsSync(distPath)) {
     throw new Error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`

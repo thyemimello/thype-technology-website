@@ -59,7 +59,7 @@ const Hero = () => {
             <span className="typing" ref={el}></span>
           </h1>
           <p>
-            Desenvolvimento Web, Ui/UX e Automação com Inteligência Artificial
+            Desenvolvimento de sistemas, Ui/UX e Automação com Inteligência Artificial
             para elevar a presença digital e aumentar suas vendas
           </p>
         </div>

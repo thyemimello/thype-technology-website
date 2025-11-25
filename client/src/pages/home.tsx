@@ -289,46 +289,52 @@ export default function Home() {
             <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               {/* Text Content */}
               <div className="space-y-4 md:space-y-6 text-center lg:text-left order-2 lg:order-1">
-                <h1
-                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
-                  data-testid="text-hero-title"
-                >
-                  <span className="bg-gradient-to-r from-[#7CC7D8] via-[#2D67CE] to-[#5C00AB] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(124,199,216,0.6)]">
-                    {t("hero.title")}{" "}
-                  </span>
-                  <span
-                    ref={typedTextRef}
-                    className="bg-gradient-to-r from-[#5C00AB] to-[#7CC7D8] bg-clip-text text-transparent"
-                    data-testid="text-hero-typed"
-                  ></span>
-                </h1>
-
-                <p
-                  className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 leading-relaxed"
-                  data-testid="text-hero-subtitle"
-                >
-                  {t("hero.subtitle")}
-                </p>
-
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start pt-2 md:pt-4">
-                  <Button
-                    size="lg"
-                    className="bg-gradient-to-r from-[#5C00AB] to-[#2D67CE] hover:shadow-[0_0_40px_rgba(92,0,171,0.8)] transition-all duration-300 text-base md:text-lg px-6 md:px-8 py-5 md:py-6"
-                    onClick={openWhatsApp}
-                    data-testid="button-hero-specialist"
+                {/* Título com texto animado */}
+                <div className="h-[120px] sm:h-[140px] md:h-[160px] lg:h-[200px] xl:h-[240px] flex items-center justify-center lg:justify-start">
+                  <h1
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
+                    data-testid="text-hero-title"
                   >
-                    {t("hero.cta")}
-                  </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-2 border-[#7CC7D8] text-[#7CC7D8] hover:bg-[#7CC7D8]/20 hover:shadow-[0_0_30px_rgba(124,199,216,0.6)] backdrop-blur-sm text-base md:text-lg px-6 md:px-8 py-5 md:py-6"
-                    onClick={() => scrollToSection("portfolio")}
-                    data-testid="button-hero-portfolio"
+                    <span className="bg-gradient-to-r from-[#7CC7D8] via-[#2D67CE] to-[#5C00AB] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(124,199,216,0.6)]">
+                      {t("hero.title")}{" "}
+                    </span>
+                    <span
+                      ref={typedTextRef}
+                      className="bg-gradient-to-r from-[#5C00AB] to-[#7CC7D8] bg-clip-text text-transparent"
+                      data-testid="text-hero-typed"
+                    ></span>
+                  </h1>
+                </div>
+
+                {/* Texto estático */}
+                <div className="space-y-4 md:space-y-6">
+                  <p
+                    className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 leading-relaxed"
+                    data-testid="text-hero-subtitle"
                   >
-                    Ver Cases
-                  </Button>
+                    {t("hero.subtitle")}
+                  </p>
+
+                  {/* CTA Buttons */}
+                  <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start pt-2 md:pt-4">
+                    <Button
+                      size="lg"
+                      className="bg-gradient-to-r from-[#5C00AB] to-[#2D67CE] hover:shadow-[0_0_40px_rgba(92,0,171,0.8)] transition-all duration-300 text-base md:text-lg px-6 md:px-8 py-5 md:py-6"
+                      onClick={openWhatsApp}
+                      data-testid="button-hero-specialist"
+                    >
+                      {t("hero.cta")}
+                    </Button>
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="border-2 border-[#7CC7D8] text-[#7CC7D8] hover:bg-[#7CC7D8]/20 hover:shadow-[0_0_30px_rgba(124,199,216,0.6)] backdrop-blur-sm text-base md:text-lg px-6 md:px-8 py-5 md:py-6"
+                      onClick={() => scrollToSection("portfolio")}
+                      data-testid="button-hero-portfolio"
+                    >
+                      Ver Cases
+                    </Button>
+                  </div>
                 </div>
               </div>
 
@@ -404,24 +410,14 @@ export default function Home() {
                 </Card>
               </div>
 
-              {/* THyPE Symbol with Parallax */}
+              {/* Imagem Quem Somos */}
               <div className="flex justify-center lg:justify-end">
-                <div
-                  className="relative w-64 h-64 md:w-80 md:h-80"
-                  style={{
-                    animation: "float 5s ease-in-out infinite",
-                    transform: `translateY(${getParallax(0.1, 40)}px)`,
-                  }}
-                >
+                <div className="relative w-64 h-64 md:w-80 md:h-80">
                   <img
-                    src="/assets/icone_1764024194290.png"
-                    alt="THyPE Technology Symbol"
-                    className="w-full h-full object-contain drop-shadow-[0_0_50px_rgba(92,0,171,0.7)]"
-                    style={{
-                      filter:
-                        "drop-shadow(0 0 60px rgba(124,199,216,0.6)) drop-shadow(0 0 100px rgba(92,0,171,0.4))",
-                    }}
-                    data-testid="img-about-3d"
+                    src="/assets/imagequemsomos.svg"
+                    alt="THyPE Technology - Quem Somos"
+                    className="w-full h-full object-contain"
+                    data-testid="img-about-quemsomos"
                   />
                 </div>
               </div>
@@ -543,31 +539,15 @@ export default function Home() {
             }`}
           >
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* 3D Tech Icon (AI Brain Circuit) with Parallax */}
+              {/* Imagem Diferenciais */}
               <div className="flex justify-center lg:justify-start order-2 lg:order-1">
-                <div
-                  className="relative w-64 h-64 md:w-80 md:h-80"
-                  style={{
-                    animation: "float 4s ease-in-out infinite",
-                    transform: `translateY(${getParallax(
-                      -0.08,
-                      30
-                    )}px) translateX(${getParallax(0.05, 20)}px)`,
-                  }}
-                >
-                  <div className="relative w-full h-full flex items-center justify-center">
-                    <img
-                      src="/assets/icone_1764023164486.png"
-                      alt="THyPE Technology - Desenvolvimento e Código"
-                      className="w-48 h-48 md:w-64 md:h-64 object-contain"
-                      style={{
-                        filter:
-                          "drop-shadow(0 0 40px rgba(124,199,216,0.8)) drop-shadow(0 0 80px rgba(45,103,206,0.6))",
-                        animation: "rotate3d 20s linear infinite",
-                      }}
-                      data-testid="img-differentials-tech"
-                    />
-                  </div>
+                <div className="relative w-64 h-64 md:w-80 md:h-80">
+                  <img
+                    src="/assets/diferencias.png"
+                    alt="THyPE Technology - Nossos Diferenciais"
+                    className="w-full h-full object-contain"
+                    data-testid="img-differentials-diferencias"
+                  />
                 </div>
               </div>
 

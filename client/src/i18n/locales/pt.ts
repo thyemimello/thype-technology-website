@@ -15,7 +15,7 @@ export const pt = {
     typed3: "processos",
     typed4: "em resultados reais",
     subtitle:
-      "Desenvolvimento Web, Ui/UX e Automação com Inteligência Artificial para elevar a presença digital e aumentar suas vendas",
+      "Desenvolvimento de sistemas, Ui/UX e Automação com Inteligência Artificial para elevar a presença digital e aumentar suas vendas",
     cta: "Fale com um Especialista",
     portfolio: "Ver Cases de Sucesso",
   },

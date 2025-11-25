@@ -15,7 +15,6 @@ import {
   Zap,
   Globe
 } from "lucide-react";
-import radarTemplate from "@assets/Purple Pink Gradient Mobile Application Presentation_1764025428825.png";
 
 export default function ProjectRadar() {
   useEffect(() => {
@@ -112,7 +111,7 @@ export default function ProjectRadar() {
                 }}
               >
                 <img 
-                  src={radarTemplate}
+                  src="/assets/Purple Pink Gradient Mobile Application Presentation_1764025428825.png"
                   alt="Radar App Interface"
                   className="w-full h-auto rounded-lg"
                   data-testid="img-project-template"

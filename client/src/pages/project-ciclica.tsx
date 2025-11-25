@@ -16,7 +16,6 @@ import {
   Moon,
   Sun
 } from "lucide-react";
-import ciclicaTemplate from "@assets/Purple Pink Gradient Mobile Application Presentation (1024 x 500 px) (1)_1764008378758.png";
 
 export default function ProjectCiclica() {
   useEffect(() => {
@@ -141,7 +140,7 @@ export default function ProjectCiclica() {
                 }}
               >
                 <img 
-                  src={ciclicaTemplate}
+                  src="/assets/Purple Pink Gradient Mobile Application Presentation (1024 x 500 px) (1)_1764008378758.png"
                   alt="Cíclica App Interface"
                   className="w-full h-auto rounded-lg"
                   data-testid="img-project-template"

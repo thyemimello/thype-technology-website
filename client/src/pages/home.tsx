@@ -29,16 +29,6 @@ import { SiWhatsapp, SiInstagram } from "react-icons/si";
 import { useEffect, useState, useRef } from "react";
 import Typed from "typed.js";
 import { SafeSpline } from "@/components/safe-spline";
-import thypeLogo from "@assets/Logotipo Thype Principal Cor@2x_1764008378756.png";
-import thypeSymbol from "@assets/Símbolo Thype Cor@2x_1764008378756.png";
-import thypeCodeIcon from "@assets/icone_1764024194290.png";
-import ciclicaTemplate from "@assets/Purple Pink Gradient Mobile Application Presentation (1024 x 500 px) (1)_1764008378758.png";
-import radarTemplate from "@assets/Purple Pink Gradient Mobile Application Presentation_1764025428825.png";
-import otimizadorVideo from "@assets/otmizador _1764027286047.mp4";
-import fluidShape from "@assets/Apresentação profissional preta proposta investimento_1764008378757.png";
-import videoBg from "@assets/vecteezy_gently-flowing-and-rippling-neon-colored-pink-and-blue_35580092_1764019237897.webm";
-import codeIcon from "@assets/icone_1764023164486.png";
-import fluidShape3D from "@assets/image_1764023243675.png";
 
 export default function Home() {
   const { t, language } = useTranslation();
@@ -160,7 +150,7 @@ export default function Home() {
           {/* Navbar */}
           <nav className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-6">
             <img 
-              src={thypeLogo} 
+              src="/assets/Logotipo Thype Principal Cor@2x_1764008378756.png" 
               alt="Thype Logo" 
               className="h-12 md:h-16 drop-shadow-[0_0_20px_rgba(92,0,171,0.8)]"
               data-testid="img-navbar-logo"
@@ -215,7 +205,7 @@ export default function Home() {
             className="absolute inset-0 w-full h-full object-cover"
             data-testid="video-hero-background"
           >
-            <source src={videoBg} type="video/webm" />
+            <source src="/assets/vecteezy_gently-flowing-and-rippling-neon-colored-pink-and-blue_35580092_1764019237897.webm" type="video/webm" />
             Seu navegador não suporta vídeos em background.
           </video>
 
@@ -334,7 +324,7 @@ export default function Home() {
                   }}
                 >
                   <img 
-                    src={thypeCodeIcon} 
+                    src="/assets/icone_1764024194290.png" 
                     alt="THyPE Technology Symbol" 
                     className="w-full h-full object-contain drop-shadow-[0_0_50px_rgba(92,0,171,0.7)]"
                     style={{
@@ -450,7 +440,7 @@ export default function Home() {
                 >
                   <div className="relative w-full h-full flex items-center justify-center">
                     <img 
-                      src={codeIcon}
+                      src="/assets/icone_1764023164486.png"
                       alt="THyPE Technology - Desenvolvimento e Código"
                       className="w-48 h-48 md:w-64 md:h-64 object-contain" 
                       style={{
@@ -535,7 +525,7 @@ export default function Home() {
                     }}
                   >
                     <img 
-                      src={ciclicaTemplate} 
+                      src="/assets/Purple Pink Gradient Mobile Application Presentation (1024 x 500 px) (1)_1764008378758.png" 
                       alt="Cíclica App Mockup" 
                       className="w-full max-w-2xl rounded-lg shadow-[0_0_60px_rgba(92,0,171,0.6)]"
                       style={{
@@ -579,7 +569,7 @@ export default function Home() {
                     }}
                   >
                     <img 
-                      src={radarTemplate} 
+                      src="/assets/Purple Pink Gradient Mobile Application Presentation_1764025428825.png" 
                       alt="Radar App Mockup" 
                       className="w-full max-w-2xl rounded-lg shadow-[0_0_60px_rgba(45,103,206,0.6)]"
                       style={{
@@ -847,7 +837,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-3">
-                <img src={thypeSymbol} alt="THyPE Symbol" className="h-8" />
+                <img src="/assets/Símbolo Thype Cor@2x_1764008378756.png" alt="THyPE Symbol" className="h-8" />
                 <span className="text-muted-foreground">{t('footer.rights')}</span>
               </div>
               <div className="text-muted-foreground text-sm">

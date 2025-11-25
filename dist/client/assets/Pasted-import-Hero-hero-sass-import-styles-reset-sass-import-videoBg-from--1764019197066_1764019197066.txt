@@ -1,0 +1,88 @@
+import "../Hero/hero.sass";
+import "../../../../styles/reset.sass";
+import videoBg from "../../../../assets/videos/vecteezy_gently-flowing-and-rippling-neon-colored-pink-and-blue_35580092.webm";
+import logo from "../../../../assets/img/logo.png";
+import Spline from "@splinetool/react-spline";
+import { useEffect, useRef, useState } from "react";
+import Typed from "typed.js";
+
+const Hero = () => {
+  const el = useRef(null); // referência ao elemento onde o texto vai aparecer
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["tecnologia em resultados reais"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true,
+    });
+
+    return () => typed.destroy(); // limpa quando o componente desmontar
+  }, []);
+  return (
+    <section className="home">
+      <section className="menu">
+        <img src={logo} alt="Thype Logo" className="logo" />
+
+        {/* Botão Hamburger */}
+        <button
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Menu"
+        >
+          <span className={menuOpen ? "active" : ""}></span>
+          <span className={menuOpen ? "active" : ""}></span>
+          <span className={menuOpen ? "active" : ""}></span>
+        </button>
+
+        <ul className={`menu-items ${menuOpen ? "menu-open" : ""}`}>
+          <li onClick={() => setMenuOpen(false)}>Home</li>
+          <li onClick={() => setMenuOpen(false)}>Sobre</li>
+          <li onClick={() => setMenuOpen(false)}>Serviços</li>
+          <li onClick={() => setMenuOpen(false)}>Portfolio</li>
+          <li onClick={() => setMenuOpen(false)}>Contato</li>
+          <button onClick={() => setMenuOpen(false)}>Fale no WhatsApp</button>
+        </ul>
+      </section>
+      <video autoPlay loop muted playsInline>
+        <source src={videoBg} type="video/webm" />
+        Seu navegador não suporta vídeos em background.
+      </video>
+
+      <div className="overlay"></div>
+
+      <div className="content">
+        <div>
+          <h1>
+            <span className="text-1">Transformamos </span>
+            <span className="typing" ref={el}></span>
+          </h1>
+          <p>
+            Desenvolvimento Web, Ui/UX e Automação com Inteligência Artificial
+            para elevar a presença digital e aumentar suas vendas
+          </p>
+        </div>
+        <div className="spline-container">
+          <Spline
+            scene="https://prod.spline.design/G-WkEdmuaQVjJTbH/scene.splinecode"
+            style={{
+              width: "175%",
+              height: "120%",
+              overflow: "visible",
+              clipPath: "none",
+              transform: "translate(-10%, -10%)",
+            }}
+            renderOnDemand={false}
+          />
+        </div>
+      </div>
+      <div className="btnCTA">
+        <button>Fale com um Especialista</button>
+        <button>Ver Portfolio</button>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

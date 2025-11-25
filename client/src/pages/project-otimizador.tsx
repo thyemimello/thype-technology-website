@@ -3,7 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Cog, BarChart3, Brain, Activity, Monitor, ChevronRight } from "lucide-react";
 import { Link } from "wouter";
-import otimizadorVideo from "@assets/otmizador _1764027286047.mp4";
 
 export default function ProjectOtimizador() {
   const scrollToSection = (id: string) => {
@@ -53,7 +52,7 @@ export default function ProjectOtimizador() {
                   controls
                   data-testid="video-presentation"
                 >
-                  <source src={otimizadorVideo} type="video/mp4" />
+                  <source src="/assets/otmizador _1764027286047.mp4" type="video/mp4" />
                   Seu navegador não suporta reprodução de vídeo.
                 </video>
               </Card>

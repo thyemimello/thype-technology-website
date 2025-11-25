@@ -1,0 +1,65 @@
+Cíclica – O app que acompanha seu ciclo, sua energia e sua evolução
+
+Aplicativo mobile desenvolvido pela Thype Technology para acompanhar o ciclo menstrual, energia vital, sintomas, treinos e bem-estar feminino — tudo guiado pela IA LunIA, que entrega recomendações inteligentes e personalizadas para cada fase do ciclo.
+
+O Cíclica foi criado para oferecer autonomia, clareza e conexão com o corpo, reunindo em um só lugar monitoramento completo do ciclo, treinos alinhados à energia do dia, registro de sentimentos, histórico, calendário menstrual, gamificação e uma experiência acolhedora.
+
+Principais Funcionalidades
+Acompanhamento inteligente do ciclo
+
+O app calcula automaticamente a fase atual com base nos registros da usuária, utilizando histórico real para prever menstruação, energia e mudanças hormonais de forma personalizada.
+
+IA LunIA – sua coach de bem-estar
+
+A IA analisa o ciclo, sintomas, treinos feitos e humor para responder dúvidas, orientar treinos e oferecer motivação empática em cada fase.
+
+Treino do dia baseado na fase do ciclo
+
+Recomendações personalizadas de treino (A, B, C, D ou E) com progressão automática, vídeos integrados, barra de progresso e pontuação.
+
+Registro de sintomas e sentimentos
+
+A usuária registra humor, desconfortos, notas e peso — tudo organizado por categorias, construindo um histórico completo por mês.
+
+Calendário Menstrual completo
+
+Visualização colorida por fase (menstruada, folicular, ovulatória, lútea), treinos realizados, sintomas registrados e relatório diário.
+
+Gamificação Lunar
+
+Moedinha Lunar (XP por treinos e registros de sintomas)
+
+Classe Lunar (Lua Nova, Crescente, Cheia e Minguante conforme evolução da usuária)
+
+Medalha Lunar ao concluir treinos
+
+Tudo desenhado para motivar e acompanhar o progresso mês a mês.
+
+Dashboard acolhedor e personalizado
+
+Saudação com nome, fase atual, treino do dia, pontuação, energia feminina e atalhos rápidos para registrar sintomas e acessar o histórico.
+
+Tecnologias Utilizadas
+
+React Native com TypeScript
+
+Expo
+
+FastAPI
+
+PostgreSQL
+
+LangChain + OpenAI GPT-4 (RAG)
+
+Expo Notifications
+
+Arquitetura orientada a múltiplos módulos e IA integrada
+
+Design System feminino e acolhedor inspirado em wellness & ciclo menstrual
+
+Resultado
+
+O Cíclica foi projetado para entregar clareza, acolhimento e inteligência, guiando a usuária a compreender seu corpo e sua energia em cada fase.
+Com uma estética moderna, feminina e suave, combinada a uma IA empática, o app cria uma experiência única onde tecnologia, autocuidado e ciência se encontram.
+
+É uma solução completa para quem deseja entender o ciclo, treinar no momento certo, acompanhar sentimentos e evoluir com consciência — dia após dia, mês após mês.

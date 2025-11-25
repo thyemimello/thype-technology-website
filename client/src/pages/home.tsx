@@ -327,7 +327,7 @@ export default function Home() {
                     onClick={() => scrollToSection("portfolio")}
                     data-testid="button-hero-portfolio"
                   >
-                    Ver Portfolio
+                    Ver Cases
                   </Button>
                 </div>
               </div>

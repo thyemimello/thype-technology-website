@@ -3,7 +3,7 @@ export const es = {
     home: "Inicio",
     about: "Nosotros",
     services: "Servicios",
-    portfolio: "Portafolio",
+    portfolio: "Casos de Éxito",
     contact: "Contacto",
     whatsapp: "Hablar en WhatsApp",
     specialist: "Hablar con un Especialista",
@@ -17,7 +17,7 @@ export const es = {
     subtitle:
       "Desarrollo Web, UI/UX y Automatización con Inteligencia Artificial para elevar tu presencia digital y aumentar tus ventas",
     cta: "Hablar con un Especialista",
-    portfolio: "Ver Portafolio",
+    portfolio: "Ver Casos de Éxito",
   },
   about: {
     title: "Nosotros",
@@ -72,7 +72,7 @@ export const es = {
     ],
   },
   portfolio: {
-    title: "Portafolio",
+    title: "Casos de Éxito",
     ciclica: {
       badge: "App Móvil",
       title: "Cíclica – La app que acompaña tu ciclo y tu energía",

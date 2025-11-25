@@ -293,12 +293,12 @@ export default function Home() {
                   className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
                   data-testid="text-hero-title"
                 >
-                  <span className="bg-gradient-to-r from-[#4A9DB0] via-[#1E4A8C] to-[#3D0070] bg-clip-text text-transparent drop-shadow-[0_0_50px_rgba(124,199,216,0.9)] filter drop-shadow-[0_0_30px_rgba(61,0,112,0.8)] font-black text-shadow-lg">
+                  <span className="bg-gradient-to-r from-[#7CC7D8] via-[#2D67CE] to-[#5C00AB] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(124,199,216,0.6)]">
                     {t("hero.title")}{" "}
                   </span>
                   <span
                     ref={typedTextRef}
-                    className="bg-gradient-to-r from-[#3D0070] to-[#4A9DB0] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(61,0,112,0.7)] filter drop-shadow-[0_0_15px_rgba(74,157,176,0.5)] font-black"
+                    className="bg-gradient-to-r from-[#5C00AB] to-[#7CC7D8] bg-clip-text text-transparent"
                     data-testid="text-hero-typed"
                   ></span>
                 </h1>
@@ -382,8 +382,12 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <h2
-                  className="text-3xl md:text-5xl font-black bg-gradient-to-r from-[#3D0070] to-[#4A9DB0] bg-clip-text text-transparent mb-6 drop-shadow-[0_0_40px_rgba(61,0,112,0.8)] filter drop-shadow-[0_0_20px_rgba(74,157,176,0.6)]"
-                  data-testid="text-about-title"
+                  className="
+                    text-3xl md:text-5xl font-black text-center
+                    text-white
+                    drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]
+                    mb-6
+                  "
                 >
                   {t("about.title")}
                 </h2>
@@ -439,8 +443,12 @@ export default function Home() {
             }`}
           >
             <h2
-              className="text-3xl md:text-5xl font-black text-center mb-6 bg-gradient-to-r from-[#3D0070] to-[#4A9DB0] bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(61,0,112,0.8)] filter drop-shadow-[0_0_20px_rgba(74,157,176,0.6)]"
-              data-testid="text-products-title"
+              className="
+                text-3xl md:text-5xl font-black text-center
+                text-white
+                drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]
+                mb-6
+              "
             >
               {t("products.title")}
             </h2>
@@ -565,7 +573,12 @@ export default function Home() {
 
               <div className="space-y-6 order-1 lg:order-2">
                 <h2
-                  className="text-3xl md:text-5xl font-black bg-gradient-to-r from-[#3D0070] to-[#4A9DB0] bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(61,0,112,0.8)] filter drop-shadow-[0_0_20px_rgba(74,157,176,0.6)]"
+                  className="
+                    text-3xl md:text-5xl font-black text-center
+                    text-white
+                    drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]
+                    mb-6
+                  "
                   data-testid="text-differentials-title"
                 >
                   {t("differentials.title")}
@@ -614,7 +627,12 @@ export default function Home() {
             }`}
           >
             <h2
-              className="text-3xl md:text-5xl font-black text-center mb-16 bg-gradient-to-r from-[#3D0070] to-[#4A9DB0] bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(61,0,112,0.8)] filter drop-shadow-[0_0_20px_rgba(74,157,176,0.6)]"
+              className="
+                text-3xl md:text-5xl font-black text-center
+                text-white
+                drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]
+                mb-16
+              "
               data-testid="text-portfolio-title"
             >
               {t("portfolio.title")}
@@ -786,7 +804,12 @@ export default function Home() {
             }`}
           >
             <h2
-              className="text-3xl md:text-5xl font-black text-center mb-6 bg-gradient-to-r from-[#3D0070] to-[#4A9DB0] bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(61,0,112,0.8)] filter drop-shadow-[0_0_20px_rgba(74,157,176,0.6)]"
+              className="
+                text-3xl md:text-5xl font-black text-center
+                text-white
+                drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]
+                mb-6
+              "
               data-testid="text-testimonials-title"
             >
               {t("testimonials.title")}
@@ -847,7 +870,7 @@ export default function Home() {
                           >
                             {testimonial.name
                               .split(" ")
-                              .map((n) => n[0])
+                              .map((n: string) => n[0])
                               .join("")}
                           </div>
                           <div>
@@ -894,7 +917,12 @@ export default function Home() {
             }`}
           >
             <h2
-              className="text-3xl md:text-5xl font-black text-center mb-6 bg-gradient-to-r from-[#3D0070] to-[#4A9DB0] bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(61,0,112,0.8)] filter drop-shadow-[0_0_20px_rgba(74,157,176,0.6)]"
+              className="
+                text-3xl md:text-5xl font-black text-center
+                text-white
+                drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]
+                mb-6
+              "
               data-testid="text-team-title"
             >
               {t("team.title")}
@@ -975,7 +1003,12 @@ export default function Home() {
             <Card className="backdrop-blur-lg bg-gradient-to-br from-[#5C00AB]/30 via-[#2D67CE]/30 to-[#7CC7D8]/30 border border-primary/30 shadow-[0_0_60px_rgba(92,0,171,0.5)] hover:shadow-[0_0_70px_rgba(92,0,171,0.7)] transition-all duration-300 p-12 md:p-16 text-center">
               <div className="space-y-8">
                 <h2
-                  className="text-4xl md:text-5xl lg:text-6xl font-black bg-gradient-to-r from-[#4A9DB0] to-[#3D0070] bg-clip-text text-transparent drop-shadow-[0_0_50px_rgba(74,157,176,0.9)] filter drop-shadow-[0_0_30px_rgba(61,0,112,0.8)]"
+                  className="
+                    text-4xl md:text-5xl lg:text-6xl font-black text-center
+                    text-white
+                    drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]
+                    mb-6
+                  "
                   data-testid="text-contact-title"
                 >
                   {t("contactSection.title")}
